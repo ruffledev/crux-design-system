@@ -1,0 +1,29 @@
+button.btn {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 14px 12px;
+  min-width: 125px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &-primary {
+    background: #00B2FF;
+    color: #ffffff;
+  }
+
+  &-secondary {
+    background: #929292;
+    color: #000000;
+  }
+
+  &-small {
+    padding: 8px 10px;
+  }
+
+  &:disabled {
+    color: #929292;
+    background: #C8C8C8;
+    cursor: not-allowed;
+  }
+}
