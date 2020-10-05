@@ -1,7 +1,5 @@
 # rds-design-system
 
----
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -19,10 +17,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the pacakage for production to the `dist` folder.<br />
 
----
-
 ## Install package
 
 Installing the built package to a React application:
 
-`npm install rds-design system`
+`npm install rds-design-system`
