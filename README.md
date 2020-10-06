@@ -26,3 +26,23 @@ Installing the built package to a React application:
 or if you are using yarn
 
 `yarn add rds-design-system`
+
+### Adding Button component
+
+- Create a new react application
+    ```
+    npx create-react-app my-app
+    cd my-app
+    npm install rds-design-system
+    ```
+- Open in IDE
+- In the `App.js` file:
+    - add `import { Button } from 'rds-design-system';`
+    - remove everything inside `<header>'
+    - add `<Button>Primary</Button>`
+
+The add the following (optional) attributes to the Button element:
+
+- `kind={'secondary'}` to render secondary button ('primary' is default)
+- `size={'small'}` to render a small
+- `disabled={true}` to disable the button
