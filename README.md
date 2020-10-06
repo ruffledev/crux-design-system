@@ -22,3 +22,7 @@ Builds the pacakage for production to the `dist` folder.<br />
 Installing the built package to a React application:
 
 `npm install rds-design-system`
+
+or if you are using yarn
+
+`yarn add rds-design-system`

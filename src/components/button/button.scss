@@ -1,5 +1,7 @@
+@import '../../global/scss/styles.scss';
+
 button.btn {
-  font-size: 1rem;
+  @include font-size(1);
   line-height: 1.25rem;
   padding: 14px 12px;
   min-width: 125px;
@@ -8,13 +10,13 @@ button.btn {
   outline: none;
 
   &-primary {
-    background: #00B2FF;
-    color: #ffffff;
+    background: $primary;
+    color: $text_primary;
   }
 
   &-secondary {
-    background: #929292;
-    color: #000000;
+    background: $secondary;
+    color: $dark;
   }
 
   &-small {
@@ -22,8 +24,8 @@ button.btn {
   }
 
   &:disabled {
-    color: #929292;
-    background: #C8C8C8;
+    color: $secondary;
+    background: $inactive;
     cursor: not-allowed;
   }
 }
