@@ -4,7 +4,7 @@
   "description": "Reusable React components library template",
   "main": "dist/index.js",
   "scripts": {
-    "start": "start-storybook",
+    "start": "start-storybook -s ./.storybook/images",
     "build": "webpack --mode production"
   },
   "author": "Eoin Fanning",
