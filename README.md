@@ -15,7 +15,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn build`
 
-Builds the pacakage for production to the `dist` folder.<br />
+Builds the package for production to the `dist` folder.<br />
 
 ## Install package
 
