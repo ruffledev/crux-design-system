@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types';
-import React from 'react'
-import './button.scss'
+import React from 'react';
+import { ButtonStyled } from './button.styled';
 
 class Button extends React.Component {
   render() {
-    return <button className={`btn btn-${this.props.kind} btn-${this.props.size}`} disabled={this.props.disabled}>{this.props.children}</button>
+    return (
+      <ButtonStyled
+        kind={this.props.kind}
+        size={this.props.size}
+        disabled={this.props.disabled}>
+          {this.props.children}
+      </ButtonStyled>
+    );
   }
 }
 

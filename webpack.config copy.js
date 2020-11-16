@@ -7,7 +7,7 @@ module.exports = {
 	entry: './src/components/index.js',
 	externals: [nodeExternals()],
 	output: {
-		filename: '[name].index.js',
+		filename: 'index.js',
 		path: path.resolve(__dirname, 'dist'),
 		library: '',
 		libraryTarget: 'commonjs'

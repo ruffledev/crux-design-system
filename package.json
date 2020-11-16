@@ -1,17 +1,21 @@
 {
   "name": "rds-design-system",
-  "version": "0.6.0",
+  "version": "0.8.3",
   "description": "Reusable React components library template",
-  "main": "dist/index.js",
+  "main": "dist/main.index.js",
   "scripts": {
-    "start": "start-storybook -s ./.storybook/images",
+    "start": "start-storybook -p 9009 -s ./.storybook/images",
     "build": "webpack --mode production"
   },
   "author": "Eoin Fanning",
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.1"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
