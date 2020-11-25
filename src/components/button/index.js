@@ -6,16 +6,14 @@ class Button extends React.Component {
   render() {
     return (
       <ButtonStyled
-        kind={this.props.kind}
-        size={this.props.size}
-        disabled={this.props.disabled}>
+        {...this.props}>
           {this.props.children}
       </ButtonStyled>
     );
   }
 }
 
-Button.PropTypes = {
+Button.propTypes = {
   children: PropTypes.node,
   disabled: PropTypes.bool,
   kind: PropTypes.string,

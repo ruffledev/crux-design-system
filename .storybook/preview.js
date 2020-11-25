@@ -1,10 +1,10 @@
 import { addDecorator } from '@storybook/react';
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import { theme } from '../src/global/styles/theme';
+import { defaultTheme } from '../src/global/styles/theme';
 
 addDecorator((storyFn) => (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
         <div>{storyFn()}</div>
     </ThemeProvider>
 ));

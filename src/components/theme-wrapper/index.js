@@ -1,25 +1,25 @@
 import PropTypes from 'prop-types';
-import React from 'react';
-import { theme } from '../../global/styles/theme';
+import React, {useEffect, useState} from 'react';
+import { defaultTheme } from '../../global/styles/theme';
 import { ThemeProvider } from 'styled-components';
 
-class ThemeWrapper extends React.Component {
-  render() {
-    return (
-      <ThemeProvider theme={this.props.theme}>
-        {this.props.children}
-      </ThemeProvider>
-      )
-  }
-}
+let combinedTheme = defaultTheme;
 
-ThemeWrapper.PropTypes = {
-  children: PropTypes.node,
-  theme: PropTypes.object,
-}
+const ThemeWrapper = ({children, theme}) => {
+  const [combinedTheme, setCombinedTheme] = useState(defaultTheme);
 
-ThemeWrapper.defaultProps = {
-  theme: theme,
+  useEffect(() => {
+    if (theme) {
+      const c = {...defaultTheme, ...theme};
+      setCombinedTheme(c);
+    }
+  }, [theme]);
+
+  return (
+    <ThemeProvider theme={combinedTheme}>
+      {children}
+    </ThemeProvider>
+  )
 };
 
-export default ThemeWrapper;
+export default ThemeWrapper

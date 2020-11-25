@@ -2,7 +2,7 @@ import { colors } from './colors';
 import { fontSize } from './font-size';
 import { lineHeight } from './line-height';
 
-export const theme = {
+export const defaultTheme = {
     colors,
     fontSize,
     lineHeight,

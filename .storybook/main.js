@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   
 	stories: ['../src/components/**/*.stories.[tj]s'],
-	addons: ['@storybook/addon-knobs'],
+	addons: ['@storybook/addon-knobs', '@storybook/addon-actions'],
 	webpackFinal: async (config, { configType }) => {
     config.module.rules.push({
       test: /\.scss$/,
