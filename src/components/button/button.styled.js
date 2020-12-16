@@ -1,18 +1,12 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-
-// const fontSize = (sizeValue = 16) => {
-//     return `
-//         font-size: ${sizeValue / 16}px;
-//         font-size: ${sizeValue}rem;
-//     `
-//   }
+import React from 'react';
+import styled, { css } from 'styled-components';
 
 export const ButtonStyled = styled.button`
     font-size: ${({theme}) => theme.fontSize.body};
     line-height: ${({theme}) => theme.lineHeight.body};
     padding: 14px 12px;
     min-width: 125px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
     outline: none;
