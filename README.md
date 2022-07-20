@@ -1,4 +1,4 @@
-# rds-design-system
+# Crux Design System
 
 ## Available Scripts
 
